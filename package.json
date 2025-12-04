@@ -1,0 +1,15 @@
+{
+  "name": "netnuggets",
+  "version": "1.0.0",
+  "description": "NetNuggets - A beautiful website directory for discovering cool websites",
+  "scripts": {
+    "install-all": "cd frontend && npm install && cd ../backend && npm install",
+    "seed": "cd backend && npm run seed",
+    "dev": "echo Please run 'npm run dev' in both frontend and backend folders separately",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "keywords": ["website", "directory", "react", "nodejs", "mongodb"],
+  "author": "",
+  "license": "MIT"
+}
