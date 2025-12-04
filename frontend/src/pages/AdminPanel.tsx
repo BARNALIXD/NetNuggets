@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, CheckCircle, XCircle, Plus, Edit2, Trash2, Star } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle, Plus, Trash2, Star } from 'lucide-react';
 import { adminAPI, websiteAPI } from '../services/api';
 import { Submission, Website } from '../types/index';
 
@@ -10,7 +10,6 @@ export const AdminPanel: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'submissions' | 'websites'>('submissions');
   const [showAddForm, setShowAddForm] = useState(false);
-  const [editingWebsite, setEditingWebsite] = useState<Website | null>(null);
 
   useEffect(() => {
     loadData();
